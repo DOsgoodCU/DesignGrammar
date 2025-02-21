@@ -1,6 +1,1 @@
 site_name: our docs
-nav:
- - Home: index.md
- - About: about.md
-theme: readthedocs
-

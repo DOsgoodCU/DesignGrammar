@@ -1,143 +1,281 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>our docs</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Home";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> our docs
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="about/">About</a>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">our docs</a>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Home</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="mkdocs">MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-              
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>our docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">our docs</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
-  <hr/>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#esa-living-planet-symposium-2022-may-23-27" class="nav-link">ESA Living Planet Symposium 2022, May 23-27</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#space-for-climate-and-disaster-risk-finance" class="nav-link">Space for climate and disaster risk finance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#problem" class="nav-link">Problem</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#design-grammar-for-solution" class="nav-link">Design grammar for solution</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#use-case-example-index-insurance" class="nav-link">Use case example: Index insurance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#world-bank-groups-next-generation-drought-insurance-project" class="nav-link">World Bank Group's Next Generation Drought Insurance project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#zambia-example" class="nav-link">Zambia example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
+<h1 id="esa-living-planet-symposium-2022-may-23-27">ESA Living Planet Symposium 2022, May 23-27</h1>
+<p>Taking the pulse of our planet from space</p>
+<h2 id="space-for-climate-and-disaster-risk-finance">Space for climate and disaster risk finance</h2>
+<h3 id="a-partnership-between-esa-and-the-world-bank-on-financial-resilience">a partnership between ESA and the World Bank on Financial Resilience</h3>
+<h3 id="live-html-version-of-presentation-bitlydesigngrammaresa"><a href="bit.ly/DesignGrammarESA">Live HTML version of presentation: bit.ly/DesignGrammarESA</a></h3>
+<h2 id="problem">Problem</h2>
+<ul>
+<li>Climate change is overwhelming our ability to address disasters</li>
+<li>
+<p>Need to finance preparedness, response, recovery at unprecedented scales</p>
+</li>
+<li>
+<p>We have data, we have demands, but how do we build solutions?</p>
+</li>
+<li>
+<p>Massive satellite datasets, millions of people have demands but we are ineffective at connecting the two.</p>
+</li>
+<li>
+<p>Analysis not enough</p>
+</li>
+<li>
+<p>Our top down models harness traditional or machine learning techniques to prescribe ineffective solutions that are not driven by the perspective from the ground.</p>
+</li>
+<li>
+<p>Example: If the rainfall starts late, a farmer might lose their crop or might be able to replant.  Totally different financing is needed depending on the farmer.  The satellite, analysis and machine learning do not know what the farmers can and cannot do.  Only the farmers know that.</p>
+</li>
+<li>
+<p>Design without meaningful input from people solutions are intended for is not only error prone, but sidesteps climate justice principals</p>
+</li>
+</ul>
+<h2 id="design-grammar-for-solution">Design grammar for solution</h2>
+<p>[<img alt="" src="Coming2consensus.gif" />{width=50%}]</p>
+<ul>
+<li>
+<p>What we have is a failure to communicate</p>
+</li>
+<li>
+<p>Design experts need to work with satellites and millions of farmers in a concrete two way crowd "human in the loop" design process</p>
+</li>
+<li>
+<p>Design grammar: </p>
+</li>
+<li>"Language" to translate the information from farmers and satellites into a step by step collaborative solution design process</li>
+</ul>
+<h2 id="use-case-example-index-insurance">Use case example: Index insurance</h2>
+<p>Relatively new insurance being implemented at large scales across the developing world to provide nations, farmers, and others with money needed when natural disasters hit.</p>
+<ul>
+<li>
+<p>Payouts triggered by satellite information</p>
+</li>
+<li>
+<p>Easy to get wrong, Important to get right</p>
+</li>
+<li>We need to fix the problem of disasters happening but the satellite formula not providing a payout</li>
+</ul>
+<h2 id="world-bank-groups-next-generation-drought-insurance-project"><a href="https://iri.columbia.edu/news/improving-risk-indicators-introducing-the-next-generation-drought-index-project/">World Bank Group's Next Generation Drought Insurance project</a></h2>
+<h3 id="established-to-address-this-disconnect">Established to address this disconnect</h3>
+<p>The design grammar of a practical process for local experts to develop solutions by combining crowdsourced farmer input, satellite data, humanitarian databases, and advanced analysis: 
+* Materials: https://fist.iri.columbia.edu/publications/docs/ngdisentraining/ 
+* Tool (username WB and password IRI): https://fist-shiny.iri.columbia.edu/WB_Senegal/optimization_app/ </p>
+<p><center>
+<a href="https://fist-shiny.iri.columbia.edu/WB_Senegal/optimization_app/"><img alt="" src="ngdimatchingSenegal.png" />{width=50%}</a>
+</center></p>
+<h2 id="zambia-example">Zambia example</h2>
+<p>An example of effective design grammar used by the Government of Zambia, working with partners such as the <a href="https://www.wfp.org/r4-rural-resilience-initiative">World Food Program R4</a></p>
+<h3 id="farmer-crowdsourcing">Farmer Crowdsourcing</h3>
+<p>Harnessing the revolution in communications technologies, the government of Zambia with technical support from IRI and WFP has had focus group meetings in more than every seventh village in the country this year, asking farmers what they need in insurance--and having the answers populate a live design database.<br />
+<br>
+Additional types of crowdsourcing include games that farmers play on their phones, described at this link: <a href="https://iri.columbia.edu/news/crowdsourcing-insurance/">ikon</a></p>
+<p>https://fist-cleandat.iri.columbia.edu/viewrec2</p>
+<video width="900" height="240"  controls>
+  <source src="MassiveZambiaCrowdsource.mp4" type="video/mp4">
+</video>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
+<h3 id="cleaning-farmer-data">Cleaning farmer data</h3>
+<p>Farmer recollections are not perfect.  To use them to fix index insurance experts must clean the data, similar to the cleaning process in a clinical study.  Zambian experts compared answers and discussion across villages in a district, review the notes of the village meetings, and follow up on concerns, reconciling the villages in a district into a district level summary.</p>
+<p><center>
+<img alt="" src="badyearsZambiaCamp.jpg" />{width=25%}
+</center></p>
+<p><br>
+Clicking on the link below shows the tool reflecting the grammar for Zambian experts to perform this cleaning process working with the language provided by the farmers
+<br>
+<center>
+https://fist-cleandat.iri.columbia.edu/comzambia
+<br>
+<a href="https://fist-cleandat.iri.columbia.edu/comzambia"><img alt="" src="ZambiaReptile.png" />{width=50%}</a></p>
+<p></center>
+<br>
+Its possible to drill down to a village and see the details of each discussion.  This information, along with historical yields allows local experts to determine standards for what needs insurance should address. Thanks to Zachary Huang and others at The  Columbia University's Data Science Institute for making this possible. 
+These will be reconciled with yield data and satellites in later steps</p>
+<h3 id="grammar-translating-farmer-needs-and-satellite-data-into-insurance-formulas">Grammar translating farmer needs and satellite data into insurance formulas</h3>
+<p>The solution uses input from the farmers that can directly be used in designing better indexes: What years were the most challenging? And what times during the year they are most at risk?  Government experts check if historical satellite datasets during the risky times of year reflect the bad years farmers reported to find improvements.  These are cross checked against the historical yield data, and the documented crop agronomics.  This process provides the information that the farmers themselves can directly review and approve, refuse, or improve in the next round of crowdsourcing. </p>
+<p>If the agreement is low, there are problems that need to be solved for the insurance to be responsible.  If agreement is high, it is worth moving forward. </p>
+<p>The link below connects to the tool that Zambian experts are using to understand the potential for improving index insurance</p>
+<p><center>
+User: BETTERINDEXES, Password: IRI</p>
+<p>https://fist-shiny.iri.columbia.edu/shiny_apps/Apps/Zambia_Window_consolidation_app/
+<br></p>
+<p><a href="https://fist-shiny.iri.columbia.edu/shiny_apps/Apps/Zambia_Window_consolidation_app/"><img alt="" src="ZambiaConsolidationExample.png" />{width=50%}</a></p>
+<p></center></p>
+<p>You can select nearly  any district in Zambia and then drag the timing blue bars for different satellites/algorithms to see what the agreement is between the satellites, farmers recollections, and the government yield datasets.  The defaults are from the risky times reported by farmers.</p>
+<p>For the real project, the next step is to send the analysis to the insurance companies as a specification/standard for what an insurance product should do. </p>
+<h3 id="additional-acknowledgments">Additional Acknowledgments</h3>
+<p>These tools that local experts use farmer input to fix index insurance using the latest datascience and remotesensing are prototypes. We would like to acknowledge transformational resources from  <a href="https://iri.columbia.edu/news/2021-actoday-highlight-helping-provide-insurance-to-a-million-smallholder-farmers/">ACToday</a>,  seed funding from the <a href="https://datascience.columbia.edu/">Columbia University Data Science Institute</a>, <a href="https://ccafs.cgiar.org/">CCAFS</a> and <a href="https://www.climate.columbia.edu/">Earth Institute, now known as the Climate School</a> helped make new projects like the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2103794&amp;HistoricalAwards=false">NSF funded DESDR</a> possible to formalize the grammar and strengthen  prototypes into software frameworks strong enough to be configured and applied in a range of contexts.  </p>
+<p>Additonal information at https://fist.iri.columbia.edu/publications/docs/Forecasts4Action/
+https://fist.iri.columbia.edu/publications/docs/BetterIndexesZambia/ and 
+ <a href="https://iri.columbia.edu/news/in-new-project-millions-of-farmers-will-help-to-improve-insurance-against-climate-disasters">State of the Planet Blog</a> </p>
+<p><center>
+<a href="https://iri.columbia.edu/news/in-new-project-millions-of-farmers-will-help-to-improve-insurance-against-climate-disasters"><img alt="" src="StateofPlanetScreenshot.png" />{width=50%}</a>
+</center></p></div>
+            </div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-      <span><a href="about/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = ".";</script>
-    <script src="js/theme_extra.js"></script>
-    <script src="js/theme.js"></script>
-      <script src="search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
 
-</body>
+    </body>
 </html>
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-02-21 16:31:50.165554+00:00
+Build Date UTC : 2025-02-21 17:05:23.753213+00:00
 -->
