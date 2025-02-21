@@ -48,9 +48,7 @@ The design grammar of a practical process for local experts to develop solutions
 * Materials: https://fist.iri.columbia.edu/publications/docs/ngdisentraining/ 
 * Tool (username WB and password IRI): https://fist-shiny.iri.columbia.edu/WB_Senegal/optimization_app/ 
 
-<center>
-[![](ngdimatchingSenegal.png)](https://fist-shiny.iri.columbia.edu/WB_Senegal/optimization_app/)
-</center>
+![](ngdimatchingSenegal.png)
 
 ## Zambia example
 
