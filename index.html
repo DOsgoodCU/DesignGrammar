@@ -63,6 +63,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#click-the-iframe-to-enlarge" class="nav-link">Click the Iframe to Enlarge</a>
+              <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#design-grammar-for-solution" class="nav-link">Design grammar for solution</a>
               <ul class="nav flex-column">
               </ul>
@@ -119,6 +124,32 @@
 <p>Design without meaningful input from people solutions are intended for is not only error prone, but sidesteps climate justice principals</p>
 </li>
 </ul>
+<iframe src="https://columbia-desdr.github.io/Sliders-ethiopia/config"></iframe>
+
+<h1 id="click-the-iframe-to-enlarge">Click the Iframe to Enlarge</h1>
+<p>Click the embedded content below to expand it:</p>
+<div style="text-align: center;">
+    <iframe id="resizableFrame" src="https://columbia-desdr.github.io/Sliders-ethiopia/config" 
+        width="400" height="250" 
+        style="border:1px solid black; transition: all 0.3s ease;"></iframe>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var frame = document.getElementById("resizableFrame");
+
+    frame.addEventListener("click", function() {
+        if (this.style.width === "400px" || this.style.width === "") {
+            this.style.width = "80%";
+            this.style.height = "80vh"; 
+        } else {
+            this.style.width = "400px";
+            this.style.height = "250px";
+        }
+    });
+});
+</script>
+
 <h2 id="design-grammar-for-solution">Design grammar for solution</h2>
 <p><img alt="" src="Coming2consensus.gif" /></p>
 <ul>
@@ -282,5 +313,5 @@ https://fist.iri.columbia.edu/publications/docs/BetterIndexesZambia/ and
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-02-21 17:30:32.542203+00:00
+Build Date UTC : 2025-02-21 17:58:56.339612+00:00
 -->
